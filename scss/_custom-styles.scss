@@ -1,0 +1,206 @@
+// Scss Document
+// By Emily Hashimoto-Roth
+
+p {
+    font-size: 1.5rem;
+    margin-bottom: 0px !important;
+};
+
+li.included {
+    list-style-image: url("../img/symbols-01.png");
+};
+
+li.excluded {
+    list-style-image: url("../img/symbols-02.png");
+};
+
+hr {
+   color: #fff !important; 
+};
+
+.fixed-top.scrolled {
+    background-color: #fff !important;
+    transition: background-color 200ms linear;
+};
+
+.fixed-top {
+    transition: background-color 200ms linear;
+};
+
+.fixed-top .color {
+    background-color: #fff !important;    
+};
+
+.navbar-scrolled {
+    background-color: #057bc1;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+};
+
+.navbar .navbar-brand {
+    margin-left: 2rem;
+};
+
+.navbar .navbar-nav {
+    margin-right: 2rem;
+};
+
+.navbar .nav-link {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-left: 3rem;
+    text-decoration: none !important;
+};
+
+.navbar .nav-link:hover {
+    color: #fff;
+    font-weight: 600;
+};
+
+.navbar .nav-link-static {
+    color: #057bc1;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    text-decoration: none !important;
+};
+
+.navbar .nav-link-static:hover {
+    color: #057bc1;
+    font-weight: 600;
+};
+
+.navbar .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+};
+
+.navbar .navbar-toggler {
+    border-color: transparent;
+    border-width: 2px;
+    margin-right: 2rem !important;
+};
+
+.navbar .navbar-toggler:hover {
+    border-color: transparent;
+    border-width: 2px;
+};
+
+.jumbotron-landing {
+    height: 100vh;
+    background: url("../img/codioful-formerly-gradienta-bKESVqfxass-unsplash.jpg") no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+};
+
+.tile {
+    height: 500px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+};
+
+.T1 {
+    background-color: #057bc1;
+    color: #fff;
+};
+
+.T2 {
+    background-color: #083645;
+    color: #fff;
+};
+
+.footer-sponsor {
+    height: 30vh;
+    background: url("../img/joel-filipe-KZa4fREZoKk-unsplash.png") no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+};
+
+.jumbotron-team {
+    height: 60vh;
+    background: url("../img/digitale-2GEr4fLZt8A-unsplash.png") no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+};
+
+.jumbotron-sponsor {
+    height: 60vh;
+    background: url("../img/fusion-medical-animation-EAgGqOiDDMg-unsplash.png") no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+};
+
+.jumbotron-contact {
+    height: 60vh;
+    background: url("../img/philipp-katzenberger-jVx8JaO2Ddc-unsplash.png") no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+};
+
+.tbh-btn {
+    background-color: #083645 !important;
+    color: #fff !important;
+    padding: 10px 60px 10px 60px !important;
+    border-radius: 0px !important;
+    border-width: 3px !important;
+    border-color: #083645 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 2px !important;
+    font-size: 1.5rem !important;
+};
+
+.tbh-btn:hover {
+    background-color: #057bc1 !important;
+    color: #fff !important;
+    border-color: #057bc1 !important;
+    transition: 200ms linear !important;
+};
+
+.tbh-btn-outline {
+    background-color: transparent !important;
+    color: #fff !important;
+    padding: 10px 60px 10px 60px !important;
+    border-radius: 0px !important;
+    border-width: 3px !important;
+    border-color: #fff !important;
+    text-transform: uppercase !important;
+    letter-spacing: 2px !important;
+    font-size: 1.5rem !important;
+};
+
+.tbh-btn-outline:hover {
+    background-color: #083645 !important;
+    color: #fff !important;
+    border-color: #083645 !important;
+    transition: 200ms linear !important;
+};
+
+
+
+

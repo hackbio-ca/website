@@ -1,0 +1,204 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TBH</title>
+    <link rel="icon" href="tbh-logo"/>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./css/bootstrap-5.0.2.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <!-- JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js" integrity="sha512-2rNj2KJ+D8s1ceNasTIex6z4HWyOnEYLVC3FigGOmyQCZc2eBXKgOxQmo3oKLHyfcj53uz4QMsRCWNbLd32Q1g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.min.js" integrity="sha512-a6ctI6w1kg3J4dSjknHj3aWLEbjitAXAjLDRUxo2wyYmDFRcz2RJuQr5M3Kt8O/TtUSp8n2rAyaXYy1sjoKmrQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Countdown script -->
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("August 1, 2024 00:00:00").getTime();
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+            // Get today's date and time
+            var now = new Date().getTime();
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            // Output the result in an element with id="demo"
+            document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+            + minutes + "m " + seconds + "s ";
+            // If the count down is over, write some text 
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("demo").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+    </script>
+</head>
+<body>
+
+    <div id="tbh-nav"></div>
+    
+    <div class="jumbotron-fluid jumbotron-landing">
+        <img src="./img/tbh-logo-09.png" class="img-fluid mx-5" width="700" alt="Logo">
+        <h1 class="text-light mx-5">Registration opens August 1, 2024!</h1>
+        <h2 class="text-light mt-5" id="demo"></h2>
+    </div>
+    
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-12 mb-5">
+                <p class="mt-5" align="center">
+                    The Toronto Bioinformatics Hackathon is a student-led computational biology hackathon, bringing together early career bioinformaticians, molecular biologists, statisticians, and computer scientists from Toronto’s Discovery District to complete interdisciplinary projects that emphasize computational and entrepreneurial thinking.<br><br>In partnership with the Terrence Donnelly Centre and the Temerty Faculty of Medicine's Computational Biology in Molecular Genetics program, our participants will collaborate to propose innovative solutions to key challenges in computational biology with commercialization potential.
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container my-5 d-none d-lg-block">
+        <div class="row mb-5">
+            <div class="col-12">
+                <h1 align="center">How to participate</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6 tile T1 px-5">
+                <h2>1. Gather your team</h2>
+                <p>Your team can have 2 - 5 members. Don't forget to pick your Team Lead!</p>
+            </div>
+            <div class="col-6 tile T2 px-5">
+                <h2>2. Pick a problem</h2>
+                <p>Brainstorm an idea for a project that you'd like to tackle.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6 tile T2 px-5">
+                <h2>3. Submit your project</h2>
+                <p>We vet your projects to ensure they're feasible to complete within a 2-day limit.</p>
+            </div>
+            <div class="col-6 tile T1 px-5">
+                <h2>4. Get hacking!</h2>
+                <p>Mark your calendars for the big event and we'll see you there!</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container my-5 d-lg-none">
+        <div class="row mb-5">
+            <div class="col-12">
+                <h1 align="center">How to participate</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 tile T1 px-5">
+                <h2>1. Gather your team</h2>
+                <p>Your team can have 2 - 5 members. Don't forget to pick your Team Lead!</p>
+            </div>
+            <div class="col-12 tile T2 px-5">
+                <h2>2. Pick a problem</h2>
+                <p>Brainstorm an idea for a project that you'd like to tackle.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 tile T1 px-5">
+                <h2>3. Submit your project</h2>
+                <p>We vet your projects to ensure they're feasible to complete within a 2-day limit.</p>
+            </div>
+            <div class="col-12 tile T2 px-5">
+                <h2>4. Get hacking!</h2>
+                <p>Mark your calendars for the big event and we'll see you there!</p>
+            </div>
+        </div>
+    </div>
+    
+    <hr>
+    
+    <div class="container my-5 d-none d-lg-block">
+        <div class="row">
+            <div class="col-12">
+                <h1 align="center">Powered by</h1>
+                <p align="center">A huge thank you to our sponsors and supporters - we couldn't do this without you!</p>
+            </div>
+        </div>
+        <div class="row justify-content-center my-5">
+            <div class="col-md-5 mx-5 my-auto">
+                <img src="./img/logos/ccbr.png" class="img-fluid" alt="">
+            </div>
+            <div class="col-md-5 mx-5 my-auto">
+                <img src="./img/logos/mogen.png" class="img-fluid" alt="">
+            </div>
+        </div>
+    </div>
+    
+    <div class="container my-5 d-lg-none">
+        <div class="row">
+            <div class="col-12">
+                <h1 align="center">Powered by</h1>
+                <p align="center">A huge thank you to our sponsors and supporters - we couldn't do this without you!</p>
+            </div>
+        </div>
+        <div class="row my-5">
+            <div class="col-10 mt-3 mx-auto">
+                <img src="./img/logos/ccbr.png" class="img-fluid" alt="">
+            </div>
+            <div class="col-10 mt-5 mx-auto">
+                <img src="./img/logos/mogen.png" class="img-fluid" alt="">
+            </div>
+        </div>
+    </div>
+    
+    <hr>
+    
+    <div id="sponsor-cta"></div>
+
+    <div id="footer"></div>
+    
+    <!-- Load navigation menu -->
+    <script>
+        var xhttp_nav = new XMLHttpRequest();
+        xhttp_nav.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+               document.getElementById("tbh-nav").innerHTML = xhttp_nav.responseText;
+            }
+        };
+        xhttp_nav.open("GET", "./nav.html", true);
+        xhttp_nav.send();
+    </script>
+    
+    <!-- Load sponsorship CTA -->
+    <script>
+        var xhttp_sponsor = new XMLHttpRequest();
+        xhttp_sponsor.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+               document.getElementById("sponsor-cta").innerHTML = xhttp_sponsor.responseText;
+            }
+        };
+        xhttp_sponsor.open("GET", "./sponsor-cta.html", true);
+        xhttp_sponsor.send();
+    </script>
+    
+    <!-- Load footer -->
+    <script>
+        var xhttp_footer = new XMLHttpRequest();
+        xhttp_footer.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+               document.getElementById("footer").innerHTML = xhttp_footer.responseText;
+            }
+        };
+        xhttp_footer.open("GET", "./footer.html", true);
+        xhttp_footer.send();
+    </script>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
