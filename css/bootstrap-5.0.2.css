@@ -76,21 +76,16 @@ hr {
   align-items: center;
   justify-content: center; }
 
-.tile {
-  height: 500px;
-  text-align: left;
+.window {
+  min-height: 500px;
+  background: url("../img/national-cancer-institute-ERdyFahv-GU-unsplash.png") no-repeat center center;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
   display: flex;
   flex-direction: column;
-  align-items: left;
+  align-items: center;
   justify-content: center; }
-
-.T1 {
-  background-color: #057bc1;
-  color: #fff; }
-
-.T2 {
-  background-color: #083645;
-  color: #fff; }
 
 .footer-sponsor {
   height: 30vh;
