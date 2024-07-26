@@ -15,7 +15,7 @@
     <!-- Countdown script -->
     <script>
         // Set the date we're counting down to
-        var countDownDate = new Date("August 30, 2024 00:00:00").getTime();
+        var countDownDate = new Date("August 30, 2024 23:59:59").getTime();
         // Update the count down every 1 second
         var x = setInterval(function() {
             // Get today's date and time
@@ -27,7 +27,7 @@
             var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
             var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
             var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-            // Output the result in an element with id="demo"
+            // Output the result
             document.getElementById("demo").innerHTML = days + "d " + hours + "h "
             + minutes + "m " + seconds + "s ";
             // If the count down is over, write some text 
@@ -43,8 +43,8 @@
     <div id="tbh-nav"></div>
     
     <div class="jumbotron-fluid jumbotron-landing">
-        <img src="./img/tbh-logo-09.png" class="img-fluid mx-5" width="700" alt="Logo">
-        <h1 class="text-light mx-5">Registration deadline is August 30, 2024!</h1>
+        <img src="./img/tbh-logo-09.png" class="img-fluid mx-5" width="500" alt="Logo">
+        <h2 class="text-light mx-5">Registration deadline is August 30, 2024!</h2>
         <h2 class="text-light mt-5" id="demo"></h2>
         <a href="#register" class="btn tbh-btn-outline mt-5">Register today!</a>
     </div>
@@ -63,20 +63,20 @@
     </div>
     
     <div class="container-fluid window my-5">
-        <div class="row my-5">
+        <div class="row mt-5">
             <div class="col-lg-6 col-md-12 my-5 px-5" align="center">
-                <h1>Register to participate</h1>
-                <p class="my-5 px-5">
+                <h3>Register to participate</h3>
+                <p class="mt-5 px-5">
                     To participate in the event, register up with the following link to the Participation Registration Form. You may register as an individual or request your teammates!
                 </p>
-                <a href="https://forms.gle/DK6DKA1w4qeD69hHA" class="btn tbh-btn-outline mt-3" role="button" target="_blank">Register</a>
+                <a href="https://forms.gle/DK6DKA1w4qeD69hHA" class="btn tbh-btn-outline mt-4" role="button" target="_blank">Register</a>
             </div>
             <div class="col-lg-6 col-md-12 my-5 px-5" align="center">
-                <h1 align="center">Propose a project</h1>
-                <p class="my-5 px-5">
+                <h3 align="center">Propose a project</h3>
+                <p class="mt-5 px-5">
                     For participants who would like to propose a project and/or serve as its Team Lead, please also complete this form in addition to the Participant Registration Form.
                 </p>
-                <a href="https://forms.gle/8VzwunQStw61pq5PA" class="btn tbh-btn-outline mt-3" role="button" target="_blank">Propose</a>
+                <a href="https://forms.gle/8VzwunQStw61pq5PA" class="btn tbh-btn-outline mt-4" role="button" target="_blank">Propose</a>
             </div>
         </div>
         <div class="row mb-5">
@@ -97,12 +97,15 @@
                 <p align="center">A huge thank you to our sponsors and supporters - we couldn't do this without you!</p>
             </div>
         </div>
-        <div class="row justify-content-center my-5">
-            <div class="col-md-5 mx-5 my-auto">
+        <div class="row justify-content-between my-5 px-5">
+            <div class="col-md-3 px-0 my-auto">
                 <img src="./img/logos/ccbr.png" class="img-fluid" alt="">
             </div>
-            <div class="col-md-5 mx-5 my-auto">
+            <div class="col-md-3 px-0 my-auto">
                 <img src="./img/logos/mogen.png" class="img-fluid" alt="">
+            </div>
+            <div class="col-md-3 px-0 my-auto">
+                <img src="./img/logos/wolfram.png" class="img-fluid" alt="">
             </div>
         </div>
     </div>
@@ -120,6 +123,9 @@
             </div>
             <div class="col-10 mt-5 mx-auto">
                 <img src="./img/logos/mogen.png" class="img-fluid" alt="">
+            </div>
+            <div class="col-10 mt-5 mx-auto">
+                <img src="./img/logos/wolfram.png" class="img-fluid" alt="">
             </div>
         </div>
     </div>
