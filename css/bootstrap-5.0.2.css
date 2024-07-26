@@ -1,7 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 p {
-  font-size: 1.5rem;
+  font-size: 1rem;
   margin-bottom: 0px !important; }
+
+ul {
+  padding-left: 1.2rem !important; }
 
 li.included {
   list-style-image: url("../img/symbols-01.png"); }
@@ -34,23 +37,12 @@ hr {
 
 .navbar .nav-link {
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 1rem;
   margin-left: 3rem;
   text-decoration: none !important; }
 
 .navbar .nav-link:hover {
   color: #fff;
-  font-weight: 600; }
-
-.navbar .nav-link-static {
-  color: #057bc1;
-  font-size: 1.5rem;
-  margin-right: 1rem;
-  margin-left: 1rem;
-  text-decoration: none !important; }
-
-.navbar .nav-link-static:hover {
-  color: #057bc1;
   font-weight: 600; }
 
 .navbar .navbar-toggler-icon {
@@ -140,7 +132,7 @@ hr {
   border-color: #083645 !important;
   text-transform: uppercase !important;
   letter-spacing: 2px !important;
-  font-size: 1.5rem !important; }
+  font-size: 1rem !important; }
 
 .tbh-btn:hover {
   background-color: #057bc1 !important;
@@ -157,12 +149,12 @@ hr {
   border-color: #fff !important;
   text-transform: uppercase !important;
   letter-spacing: 2px !important;
-  font-size: 1.5rem !important; }
+  font-size: 1rem !important; }
 
 .tbh-btn-outline:hover {
-  background-color: #083645 !important;
-  color: #fff !important;
-  border-color: #083645 !important;
+  background-color: #E3FF00 !important;
+  color: #083645 !important;
+  border-color: #E3FF00 !important;
   transition: 200ms linear !important; }
 
 /*!
