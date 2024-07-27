@@ -69,8 +69,7 @@ hr {
   justify-content: center; }
 
 .window {
-  min-height: 500px;
-  background: url("../img/national-cancer-institute-ERdyFahv-GU-unsplash.png") no-repeat center center;
+  background: url("../img/joel-filipe-KZa4fREZoKk-unsplash.png") no-repeat center center;
   background-size: cover;
   color: #fff;
   text-align: center;
@@ -137,6 +136,7 @@ hr {
 .tbh-btn:hover {
   background-color: #057bc1 !important;
   color: #fff !important;
+  font-weight: 600;
   border-color: #057bc1 !important;
   transition: 200ms linear !important; }
 
@@ -154,6 +154,7 @@ hr {
 .tbh-btn-outline:hover {
   background-color: #E3FF00 !important;
   color: #083645 !important;
+  font-weight: 600;
   border-color: #E3FF00 !important;
   transition: 200ms linear !important; }
 
