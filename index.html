@@ -1,4 +1,4 @@
-gvgvv<!doctype html>
+<!doctype html>
 <html>
 <head>
     <meta charset="UTF-8">
@@ -33,7 +33,7 @@ gvgvv<!doctype html>
             // If the count down is over, write some text 
             if (distance < 0) {
                 clearInterval(x);
-                document.getElementById("demo").innerHTML = "REGISTRATION CLOSED";
+                document.getElementById("demo").innerHTML = "See you again next year!";
             }
         }, 1000);
     </script>
@@ -53,7 +53,7 @@ gvgvv<!doctype html>
     <div class="container my-5 d-none d-lg-block">
         <div class="row align-middle">
             <div class="col-6 my-auto">
-                <img src="img/venue/ccbr-01.jpg" class="img-fluid" alt="Terrence Donnelly Centre (hackathon venue)">
+                <img src="img/hackathon-2024/group-2024.jpg" class="img-fluid" alt="Group photo of 2024 hackathon participants, organizers, and judges">
             </div>
             <div class="col-6 my-auto">
                 <p>
@@ -276,15 +276,31 @@ gvgvv<!doctype html>
     
     <!-- Load navigation menu -->
     <script>
-        var xhttp_nav = new XMLHttpRequest();
-        xhttp_nav.onreadystatechange = function() {
-            if (this.readyState == 4 && this.status == 200) {
-               document.getElementById("tbh-nav").innerHTML = xhttp_nav.responseText;
-            }
-        };
-        xhttp_nav.open("GET", "./nav.html", true);
-        xhttp_nav.send();
-    </script>
+    var xhttp_nav = new XMLHttpRequest();
+    xhttp_nav.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            // Insert the navbar into the DOM
+            document.getElementById("tbh-nav").innerHTML = xhttp_nav.responseText;
+
+            // Now that the navbar is loaded, add the scroll event listener
+            const navColour = document.querySelector("#tbh-nav");
+
+            window.addEventListener("scroll", () => {
+                if (window.scrollY >= 56) {
+                    // Add the solid background (bg-* class) and navbar-scrolled class
+                    navColour.classList.add("navbar-scrolled", "bg-blue");
+                } else {
+                    // Remove the background and navbar-scrolled class to make it transparent
+                    navColour.classList.remove("navbar-scrolled", "bg-blue");
+                }
+            });
+        }
+    };
+    xhttp_nav.open("GET", "./nav.html", true);
+    xhttp_nav.send();
+</script>
+
+
     
     <!-- Load sponsorship CTA -->
     <script>
