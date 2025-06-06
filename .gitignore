@@ -1,0 +1,19 @@
+# macOS system files
+.DS_Store
+
+# Node/npm or Python artifacts (if ever used)
+node_modules/
+dist/
+__pycache__/
+*.pyc
+
+# Build/compiled assets (optional safety)
+*.log
+*.tmp
+*.bak
+
+# VSCode settings (if not project-critical)
+.vscode/
+
+# Sass cache
+.sass-cache/
