@@ -1,453 +1,353 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>TBH</title>
-    <link rel="icon" href="tbh-logo.ico" />
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="./css/bootstrap-5.0.2.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
-    />
-    <!-- JS -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"
-      integrity="sha512-2rNj2KJ+D8s1ceNasTIex6z4HWyOnEYLVC3FigGOmyQCZc2eBXKgOxQmo3oKLHyfcj53uz4QMsRCWNbLd32Q1g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.min.js"
-      integrity="sha512-a6ctI6w1kg3J4dSjknHj3aWLEbjitAXAjLDRUxo2wyYmDFRcz2RJuQr5M3Kt8O/TtUSp8n2rAyaXYy1sjoKmrQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <!-- Countdown script -->
-    <script>
-      // Set the date we're counting down to
-      var countDownDate = new Date("August 30, 2025 23:59:59").getTime();
-      // Update the count down every 1 second
-      var x = setInterval(function () {
-        // Get today's date and time
-        var now = new Date().getTime();
-        // Find the distance between now and the count down date
-        var distance = countDownDate - now;
-        // Time calculations for days, hours, minutes and seconds
-        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        var hours = Math.floor(
-          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60),
-        );
-        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-        // Output the result
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TBH</title>
+  <link rel="icon" href="tbh-logo.ico" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="./css/bootstrap-5.0.2.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" />
+  <!-- JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"
+    integrity="sha512-2rNj2KJ+D8s1ceNasTIex6z4HWyOnEYLVC3FigGOmyQCZc2eBXKgOxQmo3oKLHyfcj53uz4QMsRCWNbLd32Q1g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.min.js"
+    integrity="sha512-a6ctI6w1kg3J4dSjknHj3aWLEbjitAXAjLDRUxo2wyYmDFRcz2RJuQr5M3Kt8O/TtUSp8n2rAyaXYy1sjoKmrQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- Countdown script -->
+  <script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("August 30, 2025 23:59:59").getTime();
+    // Update the count down every 1 second
+    var x = setInterval(function () {
+      // Get today's date and time
+      var now = new Date().getTime();
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor(
+        (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60),
+      );
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      // Output the result
+      document.getElementById("demo").innerHTML =
+        days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+      // If the count down is over, write some text
+      if (distance < 0) {
+        clearInterval(x);
         document.getElementById("demo").innerHTML =
-          days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
-        // If the count down is over, write some text
-        if (distance < 0) {
-          clearInterval(x);
-          document.getElementById("demo").innerHTML =
-            "See you again next year!";
-        }
-      }, 1000);
-    </script>
-  </head>
-  <body>
-    <div id="tbh-nav"></div>
+          "See you again next year!";
+      }
+    }, 1000);
+  </script>
+</head>
 
-    <div class="jumbotron-fluid jumbotron-landing">
-      <img
-        src="./img/tbh-logo-09.png"
-        class="img-fluid mx-5"
-        width="500"
-        alt="Logo"
-      />
-      <h2 class="text-light mx-5">September 19 - 21, 2025</h2>
-      <h2 class="text-light mt-3" id="demo"></h2>
+<body>
+  <div id="tbh-nav"></div>
+
+  <div class="jumbotron-fluid jumbotron-landing">
+    <img src="./img/tbh-logo-09.png" class="img-fluid mx-5" width="500" alt="Logo" />
+    <h2 class="text-light mx-5">September 19 - 21, 2025</h2>
+    <h2 class="text-light mt-3" id="demo"></h2>
+  </div>
+
+  <div class="container my-3 my-lg-5 d-block">
+    <div class="row justify-content-evenly">
+      <div class="col-12 my-3"></div>
+      <div class="col-12 col-lg-6 pb-2 pb-lg-0 my-auto">
+        <img src="img/hackathon-2024/group-2024.jpg" class="img-fluid"
+          alt="Group photo of 2024 hackathon participants, organizers, and judges" />
+      </div>
+      <div class="col-12 col-lg-5 pt-2 pt-lg-0 my-auto text-start">
+        <p>
+          The Toronto Bioinformatics Hackathon is a student-led computational
+          biology hackathon, bringing together early career bioinformaticians,
+          molecular biologists, statisticians, and computer scientists from
+          Toronto's Discovery District to complete interdisciplinary projects
+          that emphasize computational and entrepreneurial thinking.<br /><br />In
+          partnership with the Terrence Donnelly Centre and the Temerty
+          Faculty of Medicine's Computational Biology in Molecular Genetics
+          program, our participants will collaborate to propose innovative
+          solutions to key challenges in computational biology with
+          commercialization potential.<br /><br />
+          <strong>
+            Date: Friday September 19th to Sunday September 21st, 2025<br />
+            Location: Terrence Donnelly Centre for Cellular &amp; Biomolecular
+            Research<br />
+            160 College St, Toronto, Canada
+          </strong>
+          <br />
+          <a href="./docs/TBH_Program_2024.pdf" class="btn tbh-btn mt-4" role="button" target="_blank">View our 2024
+            program</a>
+        </p>
+      </div>
+      <div class="col-12 my-3"></div>
     </div>
+  </div>
 
-    <div class="container my-3 my-lg-5 d-block">
-      <div class="row justify-content-evenly">
-        <div class="col-12 my-3"></div>
-        <div class="col-12 col-lg-6 pb-2 pb-lg-0 my-auto">
-          <img
-            src="img/hackathon-2024/group-2024.jpg"
-            class="img-fluid"
-            alt="Group photo of 2024 hackathon participants, organizers, and judges"
-          />
-        </div>
-        <div class="col-12 col-lg-5 pt-2 pt-lg-0 my-auto text-start">
-          <p>
-            The Toronto Bioinformatics Hackathon is a student-led computational
-            biology hackathon, bringing together early career bioinformaticians,
-            molecular biologists, statisticians, and computer scientists from
-            Toronto's Discovery District to complete interdisciplinary projects
-            that emphasize computational and entrepreneurial thinking.<br /><br />In
-            partnership with the Terrence Donnelly Centre and the Temerty
-            Faculty of Medicine's Computational Biology in Molecular Genetics
-            program, our participants will collaborate to propose innovative
-            solutions to key challenges in computational biology with
-            commercialization potential.<br /><br />
-            <strong>
-              Date: Friday September 19th to Sunday September 21st, 2025<br />
-              Location: Terrence Donnelly Centre for Cellular &amp; Biomolecular
-              Research<br />
-              160 College St, Toronto, Canada
-            </strong>
-            <br />
-            <a
-              href="./docs/TBH_Program_2024.pdf"
-              class="btn tbh-btn mt-4"
-              role="button"
-              target="_blank"
-              >View our 2024 program</a
-            >
-          </p>
-        </div>
-        <div class="col-12 my-3"></div>
+  <div class="container-fluid window mt-lg-5">
+    <div class="row justify-content-center py-5">
+      <div class="col-12 py-5" align="center">
+        <h3 align="center">Read about us in the Donnelly Centre News!</h3>
+        <a href="https://thedonnellycentre.utoronto.ca/news/donnelly-centre-students-organize-torontos-first-bioinformatics-hackathon"
+          class="btn tbh-btn-outline mt-3" role="button" target="_blank">Visit article</a>
       </div>
     </div>
+  </div>
 
-    <div class="container-fluid window mt-lg-5">
-      <div class="row justify-content-center py-5">
-        <div class="col-12 py-5" align="center">
-          <h3 align="center">Read about us in the Donnelly Centre News!</h3>
-          <a
-            href="https://thedonnellycentre.utoronto.ca/news/donnelly-centre-students-organize-torontos-first-bioinformatics-hackathon"
-            class="btn tbh-btn-outline mt-3"
-            role="button"
-            target="_blank"
-            >Visit article</a
-          >
-        </div>
+  <div class="container my-5">
+    <div class="row">
+      <div class="col-12 mb-4">
+        <h1 align="center">Meet the judges</h1>
+        <h5 align="center">
+          Our expert judges are bringing their expertise to spotlight our
+          participants' innovative solutions.
+        </h5>
       </div>
     </div>
-
-    <div class="container my-5">
-      <div class="row">
-        <div class="col-12 mb-4">
-          <h1 align="center">Meet the judges</h1>
-          <h5 align="center">
-            Our expert judges are bringing their expertise to spotlight our
-            participants' innovative solutions.
-          </h5>
-        </div>
+    <div class="row justify-content-center">
+      <div class="col-lg-2 col-md-6 col-sm-12" align="center">
+        <img src="./img/headshots/backdrop_circle/A_Goeva_blue.png" class="img-fluid mt-5" alt="" />
+        <h5 class="mt-3">Dr. Aleksandrina<br />Goeva</h5>
+        <p>Assistant Professor of Computational Biology</p>
+        <p>University of Toronto</p>
       </div>
-      <div class="row justify-content-center">
-        <div class="col-lg-2 col-md-6 col-sm-12" align="center">
-          <img
-            src="./img/headshots/A_Goeva_blue.png"
-            class="img-fluid mt-5"
-            alt=""
-          />
-          <h5 class="mt-3">Dr. Aleksandrina<br />Goeva</h5>
-          <p>Assistant Professor of Computational Biology</p>
-          <p>University of Toronto</p>
-        </div>
-        <div class="col-lg-2 col-md-6 col-sm-12" align="center">
-          <img
-            src="./img/headshots/A_Shkurin_blue.png"
-            class="img-fluid mt-5"
-            alt=""
-          />
-          <h5 class="mt-3">Dr. Aleksei<br />Shkurin</h5>
-          <p>AI Lead</p>
-          <p>Invisible Technologies</p>
-        </div>
-        <div class="col-lg-2 col-md-6 col-sm-12" align="center">
-          <img
-            src="./img/headshots/O_Whitley_blue.png"
-            class="img-fluid mt-5"
-            alt=""
-          />
-          <h5 class="mt-3">Dr. Owen<br />Whitley</h5>
-          <p>Computational Biologist</p>
-          <p>Roche Canada</p>
-        </div>
-        <div class="col-lg-2 col-md-6 col-sm-12" align="center">
-          <img
-            src="./img/headshots/J_Fine_blue.png"
-            class="img-fluid mt-5"
-            alt=""
-          />
-          <h5 class="mt-3">Jacob<br />Fine</h5>
-          <p>PhD Student in Computational Biology</p>
-          <p>University of Toronto</p>
-        </div>
-        <div class="col-lg-2 col-md-6 col-sm-12" align="center">
-          <img
-            src="./img/headshots/E_Afanasiev_blue.png"
-            class="img-fluid mt-5"
-            alt=""
-          />
-          <h5 class="mt-3">Elia<br />Afanasiev</h5>
-          <p>Master's Student in Neuroscience</p>
-          <p>McGill University</p>
-        </div>
+      <div class="col-lg-2 col-md-6 col-sm-12" align="center">
+        <img src="./img/headshots/backdrop_circle/A_Shkurin_blue.png" class="img-fluid mt-5" alt="" />
+        <h5 class="mt-3">Dr. Aleksei<br />Shkurin</h5>
+        <p>AI Lead</p>
+        <p>Invisible Technologies</p>
+      </div>
+      <div class="col-lg-2 col-md-6 col-sm-12" align="center">
+        <img src="./img/headshots/backdrop_circle/O_Whitley_blue.png" class="img-fluid mt-5" alt="" />
+        <h5 class="mt-3">Dr. Owen<br />Whitley</h5>
+        <p>Computational Biologist</p>
+        <p>Roche Canada</p>
+      </div>
+      <div class="col-lg-2 col-md-6 col-sm-12" align="center">
+        <img src="./img/headshots/backdrop_circle/J_Fine_blue.png" class="img-fluid mt-5" alt="" />
+        <h5 class="mt-3">Jacob<br />Fine</h5>
+        <p>PhD Student in Computational Biology</p>
+        <p>University of Toronto</p>
+      </div>
+      <div class="col-lg-2 col-md-6 col-sm-12" align="center">
+        <img src="./img/headshots/backdrop_circle/E_Afanasiev_blue.png" class="img-fluid mt-5" alt="" />
+        <h5 class="mt-3">Elia<br />Afanasiev</h5>
+        <p>Master's Student in Neuroscience</p>
+        <p>McGill University</p>
+      </div>
+    </div>
+  </div>
+
+  <hr class="border border-dark border-2 my-4 d-block" />
+
+  <div class="container mt-3 mt-lg-5 d-block">
+    <div class="row">
+      <div class="col-12 my-4">
+        <h1 class="text-center">Powered by</h1>
       </div>
     </div>
 
-    <hr class="border border-dark border-2 my-4 d-block" />
-
-    <div class="container mt-3 mt-lg-5 d-block">
-      <div class="row">
-        <div class="col-12 my-4">
-          <h1 class="text-center">Powered by</h1>
-        </div>
+    <!-- First row -->
+    <div class="row justify-content-evenly align-items-center text-center">
+      <div class="col-12 col-sm-6 col-lg-3 my-3">
+        <img src="./img/logos/ccbr.png" class="img-fluid mx-auto d-block w-100 d-none d-sm-block"
+          alt="Donnelly Centre" />
+        <img src="./img/logos/ccbr.png" class="img-fluid mx-auto d-block w-75 d-block d-sm-none"
+          alt="Donnelly Centre (mobile)" />
       </div>
-
-      <!-- First row -->
-      <div class="row justify-content-evenly align-items-center text-center">
-        <div class="col-12 col-sm-6 col-lg-3 my-3">
-          <img
-            src="./img/logos/ccbr.png"
-            class="img-fluid mx-auto d-block w-100 d-none d-sm-block"
-            alt="Donnelly Centre"
-          />
-          <img
-            src="./img/logos/ccbr.png"
-            class="img-fluid mx-auto d-block w-75 d-block d-sm-none"
-            alt="Donnelly Centre (mobile)"
-          />
-        </div>
-        <div class="col-12 col-sm-6 col-lg-3 my-3">
-          <img
-            src="./img/logos/mogen.png"
-            class="img-fluid mx-auto d-block w-100 d-none d-sm-block"
-            alt="Molecular Genetics UofT"
-          />
-          <img
-            src="./img/logos/mogen.png"
-            class="img-fluid mx-auto d-block w-75 d-block d-sm-none"
-            alt="Molecular Genetics UofT (mobile)"
-          />
-        </div>
-        <div class="col-12 col-sm-6 col-lg-3 my-3">
-          <img
-            src="./img/logos/dg.png"
-            class="img-fluid mx-auto d-block w-100 d-none d-sm-block"
-            alt="Deep Genomics"
-          />
-          <img
-            src="./img/logos/dg.png"
-            class="img-fluid mx-auto d-block w-75 d-block d-sm-none"
-            alt="Deep Genomics (mobile)"
-          />
-        </div>
+      <div class="col-12 col-sm-6 col-lg-3 my-3">
+        <img src="./img/logos/mogen.png" class="img-fluid mx-auto d-block w-100 d-none d-sm-block"
+          alt="Molecular Genetics UofT" />
+        <img src="./img/logos/mogen.png" class="img-fluid mx-auto d-block w-75 d-block d-sm-none"
+          alt="Molecular Genetics UofT (mobile)" />
       </div>
-
-      <!-- Second row -->
-      <div class="row justify-content-evenly align-items-center text-center">
-        <div class="col-12 col-sm-6 col-lg-2 my-3">
-          <img
-            src="./img/logos/csb.png"
-            class="img-fluid mx-auto d-block w-100 d-none d-sm-block"
-            alt="CSB"
-          />
-          <img
-            src="./img/logos/csb.png"
-            class="img-fluid mx-auto d-block w-75 d-block d-sm-none"
-            alt="CSB (mobile)"
-          />
-        </div>
-        <div class="col-12 col-sm-6 col-lg-5 my-3">
-          <img
-            src="./img/logos/da-horizontal.png"
-            class="img-fluid mx-auto d-block w-100 d-none d-sm-block"
-            alt="Digital Research Alliance"
-          />
-          <img
-            src="./img/logos/da-horizontal.png"
-            class="img-fluid mx-auto d-block w-75 d-block d-sm-none"
-            alt="Digital Research Alliance (mobile)"
-          />
-        </div>
-      </div>
-
-      <!-- Third row -->
-      <div class="row justify-content-evenly align-items-center text-center">
-        <div class="col-12 col-sm-6 col-lg-4 my-3">
-          <img
-            src="./img/logos/wolfram.png"
-            class="img-fluid mx-auto d-block w-100 d-none d-sm-block"
-            alt="Wolfram"
-          />
-          <img
-            src="./img/logos/wolfram.png"
-            class="img-fluid mx-auto d-block w-75 d-block d-sm-none"
-            alt="Wolfram (mobile)"
-          />
-        </div>
-        <div class="col-12 col-sm-6 col-lg-3 my-3">
-          <img
-            src="./img/logos/bioinformatics.jpg"
-            class="img-fluid mx-auto d-block w-100 d-none d-sm-block"
-            alt="bioinformatics.ca"
-          />
-          <img
-            src="./img/logos/bioinformatics.jpg"
-            class="img-fluid mx-auto d-block w-75 d-block d-sm-none"
-            alt="bioinformatics.ca (mobile)"
-          />
-        </div>
-      </div>
-
-      <!-- Fourth row -->
-      <div class="row justify-content-center text-center">
-        <div class="col-12 col-md-6 col-lg-4 mt-4 mb-5">
-          <img
-            src="./img/logos/gbb.png"
-            class="img-fluid mx-auto d-block w-100 d-none d-sm-block"
-            alt="GBB"
-          />
-          <img
-            src="./img/logos/gbb.png"
-            class="img-fluid mx-auto d-block w-75 d-block d-sm-none"
-            alt="GBB (mobile)"
-          />
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-12 mt-3 mt-lg-5">
-          <div class="my-4 my-lg-2">
-            <h4 class="text-center">
-              A huge thank you to our sponsors and supporters – we couldn't do
-              this without you!
-            </h4>
-          </div>
-        </div>
+      <div class="col-12 col-sm-6 col-lg-3 my-3">
+        <img src="./img/logos/dg.png" class="img-fluid mx-auto d-block w-100 d-none d-sm-block" alt="Deep Genomics" />
+        <img src="./img/logos/dg.png" class="img-fluid mx-auto d-block w-75 d-block d-sm-none"
+          alt="Deep Genomics (mobile)" />
       </div>
     </div>
 
-    <div id="sponsor-cta"></div>
-
-    <div class="container my-5">
-      <div class="row">
-        <div class="col-12">
-          <h1 class="text-center mb-4">Code of Conduct</h1>
-          <p class="lead text-center mb-5">
-            We are committed to organizing an enjoyable experience for all our
-            participants. This is essential for fostering a community that is
-            welcoming and inclusive. Discrimination and/or harassment on the
-            basis of any kind will therefore not be tolerated. By participating
-            in this hackathon, you agree to abide by this Code of Conduct.
-          </p>
-
-          <h3 class="text-center mt-5 mb-4">Our Principles</h3>
-          <p class="mt-3 mb-3">
-            <strong>Respect and Inclusivity: </strong>We are committed to
-            providing a positive and inclusive experience for everyone,
-            regardless of gender, gender identity and expression, sexual
-            orientation, disability, physical appearance, body size, race, age,
-            or religion.
-          </p>
-          <p class="mt-3 mb-3">
-            <strong>Open Communication: </strong>Foster a community where
-            everyone feels comfortable sharing their ideas and opinions without
-            fear of harassment or criticism. Constructive feedback is
-            encouraged, but it should be delivered with respect.
-          </p>
-          <p class="mt-3 mb-3">
-            <strong>Collaboration and Support: </strong>Encourage collaboration
-            and help others whenever possible. Our collective goal is to
-            innovate and learn together.
-          </p>
-
-          <h3 class="text-center mt-5 mb-4">Unacceptable Behavior</h3>
-          <p class="mt-3 mb-3">
-            <strong>Harassment and Bullying: </strong>This includes offensive
-            verbal comments, sexual images in public spaces, deliberate
-            intimidation, stalking, following, harassing photography or
-            recording, sustained disruption of events, inappropriate physical
-            contact, and unwelcome sexual attention.
-          </p>
-          <p class="mt-3 mb-3">
-            <strong>Exclusionary Behavior: </strong>Discouraging or excluding
-            others from participating in discussions, projects, or social
-            activities based on their personal attributes or choices.
-          </p>
-          <p class="mt-3 mb-3">
-            <strong>Dishonesty: </strong>Plagiarism, unauthorized use of others'
-            code or ideas, and other forms of cheating are strictly prohibited.
-          </p>
-          <p class="mt-5 text-center mb-3">
-            If you witness or experience any behavior that violates this code,
-            please report it immediately. You can contact hackathon staff in
-            person, through the <a href="contact.html">contact form</a> on our
-            website, or by emailing
-            <a href="mailto:info.biohackathon@gmail.com"
-              >info.biohackathon@gmail.com</a
-            >.
-          </p>
-          <p class="mt-3 text-center mb-3">
-            We value the safety and well-being of our participants. All reports
-            will be taken seriously and handled with respect and discretion.
-          </p>
-          <p class="mt-3 text-center mb-3">
-            Participants asked to stop any harassing behavior are expected to
-            comply immediately. Violating these rules may result in the
-            perpetrating participant being asked to leave the event at the sole
-            discretion of the event organizers.
-          </p>
-        </div>
+    <!-- Second row -->
+    <div class="row justify-content-evenly align-items-center text-center">
+      <div class="col-12 col-sm-6 col-lg-2 my-3">
+        <img src="./img/logos/csb.png" class="img-fluid mx-auto d-block w-100 d-none d-sm-block" alt="CSB" />
+        <img src="./img/logos/csb.png" class="img-fluid mx-auto d-block w-75 d-block d-sm-none" alt="CSB (mobile)" />
+      </div>
+      <div class="col-12 col-sm-6 col-lg-5 my-3">
+        <img src="./img/logos/da-horizontal.png" class="img-fluid mx-auto d-block w-100 d-none d-sm-block"
+          alt="Digital Research Alliance" />
+        <img src="./img/logos/da-horizontal.png" class="img-fluid mx-auto d-block w-75 d-block d-sm-none"
+          alt="Digital Research Alliance (mobile)" />
       </div>
     </div>
 
-    <div id="footer"></div>
+    <!-- Third row -->
+    <div class="row justify-content-evenly align-items-center text-center">
+      <div class="col-12 col-sm-6 col-lg-4 my-3">
+        <img src="./img/logos/wolfram.png" class="img-fluid mx-auto d-block w-100 d-none d-sm-block" alt="Wolfram" />
+        <img src="./img/logos/wolfram.png" class="img-fluid mx-auto d-block w-75 d-block d-sm-none"
+          alt="Wolfram (mobile)" />
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3 my-3">
+        <img src="./img/logos/bioinformatics.jpg" class="img-fluid mx-auto d-block w-100 d-none d-sm-block"
+          alt="bioinformatics.ca" />
+        <img src="./img/logos/bioinformatics.jpg" class="img-fluid mx-auto d-block w-75 d-block d-sm-none"
+          alt="bioinformatics.ca (mobile)" />
+      </div>
+    </div>
 
-    <!-- Load navigation menu -->
-    <script>
-      var xhttp_nav = new XMLHttpRequest();
-      xhttp_nav.onreadystatechange = function () {
-        if (this.readyState == 4 && this.status == 200) {
-          // Insert the navbar into the DOM
-          document.getElementById("tbh-nav").innerHTML = xhttp_nav.responseText;
+    <!-- Fourth row -->
+    <div class="row justify-content-center text-center">
+      <div class="col-12 col-md-6 col-lg-4 mt-4 mb-5">
+        <img src="./img/logos/gbb.png" class="img-fluid mx-auto d-block w-100 d-none d-sm-block" alt="GBB" />
+        <img src="./img/logos/gbb.png" class="img-fluid mx-auto d-block w-75 d-block d-sm-none" alt="GBB (mobile)" />
+      </div>
+    </div>
 
-          // Now that the navbar is loaded, add the scroll event listener
-          const navColour = document.querySelector("#tbh-nav");
+    <div class="row">
+      <div class="col-12 mt-3 mt-lg-5">
+        <div class="my-4 my-lg-2">
+          <h4 class="text-center">
+            A huge thank you to our sponsors and supporters – we couldn't do
+            this without you!
+          </h4>
+        </div>
+      </div>
+    </div>
+  </div>
 
-          window.addEventListener("scroll", () => {
-            if (window.scrollY >= 56) {
-              // Add the solid background (bg-* class) and navbar-scrolled class
-              navColour.classList.add("navbar-scrolled", "bg-blue");
-            } else {
-              // Remove the background and navbar-scrolled class to make it transparent
-              navColour.classList.remove("navbar-scrolled", "bg-blue");
-            }
-          });
-        }
-      };
-      xhttp_nav.open("GET", "./nav.html", true);
-      xhttp_nav.send();
-    </script>
+  <div id="sponsor-cta"></div>
 
-    <!-- Load sponsorship CTA -->
-    <script>
-      var xhttp_sponsor = new XMLHttpRequest();
-      xhttp_sponsor.onreadystatechange = function () {
-        if (this.readyState == 4 && this.status == 200) {
-          document.getElementById("sponsor-cta").innerHTML =
-            xhttp_sponsor.responseText;
-        }
-      };
-      xhttp_sponsor.open("GET", "./sponsor-cta.html", true);
-      xhttp_sponsor.send();
-    </script>
+  <div class="container my-5">
+    <div class="row">
+      <div class="col-12">
+        <h1 class="text-center mb-4">Code of Conduct</h1>
+        <p class="lead text-center mb-5">
+          We are committed to organizing an enjoyable experience for all our
+          participants. This is essential for fostering a community that is
+          welcoming and inclusive. Discrimination and/or harassment on the
+          basis of any kind will therefore not be tolerated. By participating
+          in this hackathon, you agree to abide by this Code of Conduct.
+        </p>
 
-    <!-- Load footer -->
-    <script>
-      var xhttp_footer = new XMLHttpRequest();
-      xhttp_footer.onreadystatechange = function () {
-        if (this.readyState == 4 && this.status == 200) {
-          document.getElementById("footer").innerHTML =
-            xhttp_footer.responseText;
-        }
-      };
-      xhttp_footer.open("GET", "./footer.html", true);
-      xhttp_footer.send();
-    </script>
-  </body>
+        <h3 class="text-center mt-5 mb-4">Our Principles</h3>
+        <p class="mt-3 mb-3">
+          <strong>Respect and Inclusivity: </strong>We are committed to
+          providing a positive and inclusive experience for everyone,
+          regardless of gender, gender identity and expression, sexual
+          orientation, disability, physical appearance, body size, race, age,
+          or religion.
+        </p>
+        <p class="mt-3 mb-3">
+          <strong>Open Communication: </strong>Foster a community where
+          everyone feels comfortable sharing their ideas and opinions without
+          fear of harassment or criticism. Constructive feedback is
+          encouraged, but it should be delivered with respect.
+        </p>
+        <p class="mt-3 mb-3">
+          <strong>Collaboration and Support: </strong>Encourage collaboration
+          and help others whenever possible. Our collective goal is to
+          innovate and learn together.
+        </p>
+
+        <h3 class="text-center mt-5 mb-4">Unacceptable Behavior</h3>
+        <p class="mt-3 mb-3">
+          <strong>Harassment and Bullying: </strong>This includes offensive
+          verbal comments, sexual images in public spaces, deliberate
+          intimidation, stalking, following, harassing photography or
+          recording, sustained disruption of events, inappropriate physical
+          contact, and unwelcome sexual attention.
+        </p>
+        <p class="mt-3 mb-3">
+          <strong>Exclusionary Behavior: </strong>Discouraging or excluding
+          others from participating in discussions, projects, or social
+          activities based on their personal attributes or choices.
+        </p>
+        <p class="mt-3 mb-3">
+          <strong>Dishonesty: </strong>Plagiarism, unauthorized use of others'
+          code or ideas, and other forms of cheating are strictly prohibited.
+        </p>
+        <p class="mt-5 text-center mb-3">
+          If you witness or experience any behavior that violates this code,
+          please report it immediately. You can contact hackathon staff in
+          person, through the <a href="contact.html">contact form</a> on our
+          website, or by emailing
+          <a href="mailto:info.biohackathon@gmail.com">info.biohackathon@gmail.com</a>.
+        </p>
+        <p class="mt-3 text-center mb-3">
+          We value the safety and well-being of our participants. All reports
+          will be taken seriously and handled with respect and discretion.
+        </p>
+        <p class="mt-3 text-center mb-3">
+          Participants asked to stop any harassing behavior are expected to
+          comply immediately. Violating these rules may result in the
+          perpetrating participant being asked to leave the event at the sole
+          discretion of the event organizers.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div id="footer"></div>
+
+  <!-- Load navigation menu -->
+  <script>
+    var xhttp_nav = new XMLHttpRequest();
+    xhttp_nav.onreadystatechange = function () {
+      if (this.readyState == 4 && this.status == 200) {
+        // Insert the navbar into the DOM
+        document.getElementById("tbh-nav").innerHTML = xhttp_nav.responseText;
+
+        // Now that the navbar is loaded, add the scroll event listener
+        const navColour = document.querySelector("#tbh-nav");
+
+        window.addEventListener("scroll", () => {
+          if (window.scrollY >= 56) {
+            // Add the solid background (bg-* class) and navbar-scrolled class
+            navColour.classList.add("navbar-scrolled", "bg-blue");
+          } else {
+            // Remove the background and navbar-scrolled class to make it transparent
+            navColour.classList.remove("navbar-scrolled", "bg-blue");
+          }
+        });
+      }
+    };
+    xhttp_nav.open("GET", "./nav.html", true);
+    xhttp_nav.send();
+  </script>
+
+  <!-- Load sponsorship CTA -->
+  <script>
+    var xhttp_sponsor = new XMLHttpRequest();
+    xhttp_sponsor.onreadystatechange = function () {
+      if (this.readyState == 4 && this.status == 200) {
+        document.getElementById("sponsor-cta").innerHTML =
+          xhttp_sponsor.responseText;
+      }
+    };
+    xhttp_sponsor.open("GET", "./sponsor-cta.html", true);
+    xhttp_sponsor.send();
+  </script>
+
+  <!-- Load footer -->
+  <script>
+    var xhttp_footer = new XMLHttpRequest();
+    xhttp_footer.onreadystatechange = function () {
+      if (this.readyState == 4 && this.status == 200) {
+        document.getElementById("footer").innerHTML =
+          xhttp_footer.responseText;
+      }
+    };
+    xhttp_footer.open("GET", "./footer.html", true);
+    xhttp_footer.send();
+  </script>
+</body>
+
 </html>
