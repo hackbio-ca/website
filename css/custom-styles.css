@@ -158,7 +158,7 @@ hr {
 }
 
 .jumbotron-team {
-  height: 60vh;
+  height: 50vh;
   min-height: 300px;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/digitale-2GEr4fLZt8A-unsplash.png") no-repeat center center;
   background-size: cover;
@@ -171,7 +171,7 @@ hr {
 }
 
 .jumbotron-sponsor {
-  height: 60vh;
+  height: 50vh;
   background: url("../img/fusion-medical-animation-EAgGqOiDDMg-unsplash.png") no-repeat center center;
   background-size: cover;
   color: #fff;
@@ -182,8 +182,20 @@ hr {
   justify-content: center;
 }
 
+.jumbotron-conduct {
+  height: 50vh;
+  background: url("../img/national-cancer-institute-ERdyFahv-GU-unsplash.png") no-repeat center center;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .jumbotron-contact {
-  height: 60vh;
+  height: 50vh;
   background: url("../img/philipp-katzenberger-jVx8JaO2Ddc-unsplash.png") no-repeat center center;
   background-size: cover;
   color: #fff;
