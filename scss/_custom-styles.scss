@@ -66,9 +66,13 @@ hr {
   text-decoration: none !important;
   display: inline-block;
   border-bottom: 1px solid transparent;
-  line-height: 1.4;
+  line-height: 1.5;
   transition: border-color 150ms linear;
   padding-bottom: 5px;
+}
+
+.navbar .nav-icon {
+  line-height: 1.25;
 }
 
 .navbar .nav-link:hover,
