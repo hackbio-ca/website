@@ -8,6 +8,7 @@
     <link rel="icon" href="tbh-logo.ico" />
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="./css/bootstrap-5.0.2.css" />
+    <link rel="stylesheet" href="./css/custom-styles.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
@@ -69,55 +70,58 @@
       <h2 class="text-light mt-3" id="demo"></h2>
     </div>
 
-    <div class="container my-3 my-lg-5 d-block">
-      <div class="row justify-content-evenly">
-        <div class="col-12 my-3"></div>
-        <div class="col-12 col-lg-6 pb-2 pb-lg-0 my-auto">
+    <div class="container my-3 d-block">
+      <div class="row py-5 justify-content-evenly">
+        <div class="col-12 col-lg-6 pb-4 pb-sm-0 my-auto">
           <img
             src="img/hackathon-2024/group-2024.jpg"
             class="img-fluid"
             alt="Group photo of 2024 hackathon participants, organizers, and judges"
           />
+          <p class="event-details">
+            <strong>Date:</strong> Friday September 19th to Sunday September
+            21st, 2025<br />
+            <strong>Location:</strong> Terrence Donnelly Centre for Cellular
+            &amp; Biomolecular Research<br />
+            <strong>Address:</strong> 160 College St, Toronto, Canada
+          </p>
         </div>
-        <div class="col-12 col-lg-5 pt-2 pt-lg-0 my-auto text-start">
-          <p>
+        <div class="col-12 col-lg-5 pt-2 pt-lg-0 text-start">
+          <p class="hackathon-summary">
             The Toronto Bioinformatics Hackathon is a student-led computational
             biology hackathon, bringing together early career bioinformaticians,
             molecular biologists, statisticians, and computer scientists from
             Toronto's Discovery District to complete interdisciplinary projects
-            that emphasize computational and entrepreneurial thinking.<br /><br />In
-            partnership with the Terrence Donnelly Centre and the Temerty
+            that emphasize computational and entrepreneurial thinking.
+          </p>
+          <p class="hackathon-summary">
+            In partnership with the Terrence Donnelly Centre and the Temerty
             Faculty of Medicine's Computational Biology in Molecular Genetics
             program, our participants will collaborate to propose innovative
             solutions to key challenges in computational biology with
-            commercialization potential.<br /><br />
-            <strong>
-              Date: Friday September 19th to Sunday September 21st, 2025<br />
-              Location: Terrence Donnelly Centre for Cellular &amp; Biomolecular
-              Research<br />
-              160 College St, Toronto, Canada
-            </strong>
-            <br />
+            commercialization potential.
+          </p>
+
+          <div class="col-12 text-center">
             <a
               href="./docs/TBH_Program_2024.pdf"
-              class="btn tbh-btn mt-4"
+              class="btn tbh-btn mt-4 py-3"
               role="button"
               target="_blank"
               >View our 2024 program</a
             >
-          </p>
+          </div>
         </div>
-        <div class="col-12 my-3"></div>
       </div>
     </div>
 
-    <div class="container-fluid window mt-lg-5">
+    <div class="container-fluid jumbotron-fluid window">
       <div class="row justify-content-center py-5">
         <div class="col-12 py-5" align="center">
-          <h3 align="center">Read about us in the Donnelly Centre News!</h3>
+          <h2 align="center">Read about us in the Donnelly Centre News!</h2>
           <a
             href="https://thedonnellycentre.utoronto.ca/news/donnelly-centre-students-organize-torontos-first-bioinformatics-hackathon"
-            class="btn tbh-btn-outline mt-3"
+            class="btn tbh-btn-outline mt-5 py-3"
             role="button"
             target="_blank"
             >Visit article</a
@@ -126,73 +130,53 @@
       </div>
     </div>
 
-    <div class="container my-5">
-      <div class="row">
-        <div class="col-12 mb-4">
-          <h1 align="center">Meet the judges</h1>
-          <h5 align="center">
-            Our expert judges are bringing their expertise to spotlight our
-            participants' innovative solutions.
-          </h5>
-        </div>
-      </div>
-      <div class="row justify-content-center">
-        <div class="col-lg-2 col-md-6 col-sm-12" align="center">
-          <img
-            src="./img/headshots/judges/A_Goeva_blue.png"
-            class="img-fluid mt-5"
-            alt=""
-          />
-          <h5 class="mt-3">Dr. Aleksandrina<br />Goeva</h5>
-          <p>Assistant Professor of Computational Biology</p>
-          <p>University of Toronto</p>
-        </div>
-        <div class="col-lg-2 col-md-6 col-sm-12" align="center">
-          <img
-            src="./img/headshots/judges/A_Shkurin_blue.png"
-            class="img-fluid mt-5"
-            alt=""
-          />
-          <h5 class="mt-3">Dr. Aleksei<br />Shkurin</h5>
-          <p>AI Lead</p>
-          <p>Invisible Technologies</p>
-        </div>
-        <div class="col-lg-2 col-md-6 col-sm-12" align="center">
-          <img
-            src="./img/headshots/judges/O_Whitley_blue.png"
-            class="img-fluid mt-5"
-            alt=""
-          />
-          <h5 class="mt-3">Dr. Owen<br />Whitley</h5>
-          <p>Computational Biologist</p>
-          <p>Roche Canada</p>
-        </div>
-        <div class="col-lg-2 col-md-6 col-sm-12" align="center">
-          <img
-            src="./img/headshots/judges/J_Fine_blue.png"
-            class="img-fluid mt-5"
-            alt=""
-          />
-          <h5 class="mt-3">Jacob<br />Fine</h5>
-          <p>PhD Student in Computational Biology</p>
-          <p>University of Toronto</p>
-        </div>
-        <div class="col-lg-2 col-md-6 col-sm-12" align="center">
-          <img
-            src="./img/headshots/judges/E_Afanasiev_blue.png"
-            class="img-fluid mt-5"
-            alt=""
-          />
-          <h5 class="mt-3">Elia<br />Afanasiev</h5>
-          <p>Master's Student in Neuroscience</p>
-          <p>McGill University</p>
-        </div>
+    <!-- <div class="container my-5">
+    <div class="row">
+      <div class="col-12 mb-4">
+        <h1 align="center">Meet the judges</h1>
+        <h5 align="center">
+          Our expert judges are bringing their expertise to spotlight our
+          participants' innovative solutions.
+        </h5>
       </div>
     </div>
+    <div class="row justify-content-center">
+      <div class="col-lg-2 col-md-6 col-sm-12" align="center">
+        <img src="./img/headshots/judges/A_Goeva_blue.png" class="img-fluid mt-5" alt="" />
+        <h5 class="mt-3">Dr. Aleksandrina<br />Goeva</h5>
+        <p>Assistant Professor of Computational Biology</p>
+        <p>University of Toronto</p>
+      </div>
+      <div class="col-lg-2 col-md-6 col-sm-12" align="center">
+        <img src="./img/headshots/judges/A_Shkurin_blue.png" class="img-fluid mt-5" alt="" />
+        <h5 class="mt-3">Dr. Aleksei<br />Shkurin</h5>
+        <p>AI Lead</p>
+        <p>Invisible Technologies</p>
+      </div>
+      <div class="col-lg-2 col-md-6 col-sm-12" align="center">
+        <img src="./img/headshots/judges/O_Whitley_blue.png" class="img-fluid mt-5" alt="" />
+        <h5 class="mt-3">Dr. Owen<br />Whitley</h5>
+        <p>Computational Biologist</p>
+        <p>Roche Canada</p>
+      </div>
+      <div class="col-lg-2 col-md-6 col-sm-12" align="center">
+        <img src="./img/headshots/judges/J_Fine_blue.png" class="img-fluid mt-5" alt="" />
+        <h5 class="mt-3">Jacob<br />Fine</h5>
+        <p>PhD Student in Computational Biology</p>
+        <p>University of Toronto</p>
+      </div>
+      <div class="col-lg-2 col-md-6 col-sm-12" align="center">
+        <img src="./img/headshots/judges/E_Afanasiev_blue.png" class="img-fluid mt-5" alt="" />
+        <h5 class="mt-3">Elia<br />Afanasiev</h5>
+        <p>Master's Student in Neuroscience</p>
+        <p>McGill University</p>
+      </div>
+    </div>
+  </div>
 
-    <hr class="border border-dark border-2 my-4 d-block" />
+  <hr class="border border-dark border-2 my-4 d-block" /> -->
 
-    <div class="container mt-3 mt-lg-5 d-block">
+    <div class="container my-5 d-block">
       <div class="row">
         <div class="col-12 my-4">
           <h1 class="text-center">Powered by</h1>
@@ -312,18 +296,52 @@
       </div>
 
       <div class="row">
-        <div class="col-12 mt-3 mt-lg-5">
-          <div class="my-4 my-lg-2">
-            <h4 class="text-center">
-              A huge thank you to our sponsors and supporters – we couldn't do
-              this without you!
-            </h4>
-          </div>
+        <div class="col-12 mt-5 mb-3">
+          <h4 class="sponsor-thankyou text-center">
+            A huge thank you to our sponsors and supporters – we couldn't do
+            this without you!
+          </h4>
         </div>
       </div>
     </div>
 
     <div id="sponsor-cta"></div>
+
+    <!-- Application and Project Idea Section -->
+    <div class="jumbotron-fluid footer-application py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="mb-4">Ready to Join or Pitch an Idea?</h2>
+            <p class="application-text text-center mx-auto">
+              Whether you're looking to participate in the hackathon or have a
+              compelling project idea, we want to hear from you! Submit your
+              application or propose your project using the links below.
+            </p>
+            <div
+              class="d-flex flex-column flex-md-row justify-content-center mt-5 gap-3"
+            >
+              <a
+                href="https://docs.google.com/forms/d/1Qq0DjzbLaQk0UXh0sdySDql6wM7JuMJrVV4MnWVEbDI/edit"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn tbh-btn-apply px-4 py-3"
+              >
+                Apply Now
+              </a>
+              <a
+                href="https://docs.google.com/forms/d/13nfUbI6Otayy4iW8IZFiB7_GZ7q90EYYH0aE8LQmosM/edit"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn tbh-btn-apply px-4 py-3"
+              >
+                Submit a Project Idea
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <div class="container my-5">
       <div class="row">
@@ -398,7 +416,6 @@
     </div>
 
     <div id="footer"></div>
-
     <!-- Load navigation menu -->
     <script>
       var xhttp_nav = new XMLHttpRequest();
