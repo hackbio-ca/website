@@ -304,4 +304,14 @@ hr {
   .application-text {
     max-width: 100vw;
   }
+
+  .sponsor-thankyou {
+    max-width: 100vw;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  .sponsor-thankyou {
+    max-width: 100vw;
+  }
 }
