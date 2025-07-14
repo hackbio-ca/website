@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -9,130 +10,103 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="./css/bootstrap-5.0.2.css" />
     <link rel="stylesheet" href="./css/custom-styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" />
     <!-- JS -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"
-      integrity="sha512-2rNj2KJ+D8s1ceNasTIex6z4HWyOnEYLVC3FigGOmyQCZc2eBXKgOxQmo3oKLHyfcj53uz4QMsRCWNbLd32Q1g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.min.js"
-      integrity="sha512-a6ctI6w1kg3J4dSjknHj3aWLEbjitAXAjLDRUxo2wyYmDFRcz2RJuQr5M3Kt8O/TtUSp8n2rAyaXYy1sjoKmrQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"
+        integrity="sha512-2rNj2KJ+D8s1ceNasTIex6z4HWyOnEYLVC3FigGOmyQCZc2eBXKgOxQmo3oKLHyfcj53uz4QMsRCWNbLd32Q1g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.min.js"
+        integrity="sha512-a6ctI6w1kg3J4dSjknHj3aWLEbjitAXAjLDRUxo2wyYmDFRcz2RJuQr5M3Kt8O/TtUSp8n2rAyaXYy1sjoKmrQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Countdown script -->
     <script>
-      // Set the date we're counting down to
-      var countDownDate = new Date("August 30, 2025 23:59:59").getTime();
-      // Update the count down every 1 second
-      var x = setInterval(function () {
-        // Get today's date and time
-        var now = new Date().getTime();
-        // Find the distance between now and the count down date
-        var distance = countDownDate - now;
-        // Time calculations for days, hours, minutes and seconds
-        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        var hours = Math.floor(
-          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60),
-        );
-        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-        // Output the result
-        document.getElementById("demo").innerHTML =
-          days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
-        // If the count down is over, write some text
-        if (distance < 0) {
-          clearInterval(x);
-          document.getElementById("demo").innerHTML =
-            "See you again next year!";
-        }
-      }, 1000);
+        // Set the date we're counting down to
+        var countDownDate = new Date("August 30, 2025 23:59:59").getTime();
+        // Update the count down every 1 second
+        var x = setInterval(function () {
+            // Get today's date and time
+            var now = new Date().getTime();
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor(
+                (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60),
+            );
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            // Output the result
+            document.getElementById("demo").innerHTML =
+                days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+            // If the count down is over, write some text
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("demo").innerHTML =
+                    "See you again next year!";
+            }
+        }, 1000);
     </script>
-  </head>
+</head>
 
-  <body>
+<body>
     <div id="tbh-nav"></div>
 
     <div class="jumbotron-fluid jumbotron-landing">
-      <img
-        src="./img/tbh-logo-09.png"
-        class="img-fluid mx-5"
-        width="500"
-        alt="Logo"
-      />
-      <h2 class="text-light mx-5">September 19 – 21, 2025</h2>
-      <h3 class="text-light mt-2" id="demo" style="min-height: 1.2em">
-        Loading countdown...
-      </h3>
-      <h3 class="text-warning mx-5 mt-5">
-        Project applications open July 14th, 2025
-      </h3>
+        <img src="./img/tbh-logo-09.png" class="img-fluid mx-5" width="500" alt="Logo" />
+        <h2 class="text-light mx-5">September 19 – 21, 2025</h2>
+        <h3 class="text-light mt-2" id="demo" style="min-height: 1.2em">
+            Loading countdown...
+        </h3>
+        <h3 class="text-warning mx-5 mt-5">
+            Project applications open July 14th, 2025
+        </h3>
     </div>
 
     <div class="container my-3 d-block">
-      <div class="row py-5 justify-content-evenly">
-        <div class="col-12 col-lg-6 pb-4 pb-lg-0 my-auto">
-          <img
-            src="img/hackathon-2024/group-2024.jpg"
-            class="img-fluid"
-            alt="Group photo of 2024 hackathon participants, organizers, and judges"
-          />
-          <p class="event-details">
-            <strong>Date:</strong> Friday September 19th to Sunday September
-            21st, 2025<br />
-            <strong>Location:</strong> Terrence Donnelly Centre for Cellular
-            &amp; Biomolecular Research<br />
-            <strong>Address:</strong> 160 College St, Toronto, Canada
-          </p>
-        </div>
-        <div class="col-12 col-lg-5 pt-2 pt-lg-0 text-start">
-          <p class="hackathon-summary">
-            The Toronto Bioinformatics Hackathon is a student-led computational
-            biology hackathon, bringing together early career bioinformaticians,
-            molecular biologists, statisticians, and computer scientists from
-            Toronto's Discovery District to complete interdisciplinary projects
-            that emphasize computational and entrepreneurial thinking.
-          </p>
-          <p class="hackathon-summary">
-            In partnership with the Terrence Donnelly Centre and the Temerty
-            Faculty of Medicine's Computational Biology in Molecular Genetics
-            program, our participants will collaborate to propose innovative
-            solutions to key challenges in computational biology with
-            commercialization potential.
-          </p>
+        <div class="row py-5 justify-content-evenly">
+            <div class="col-12 col-lg-6 pb-4 pb-lg-0 my-auto">
+                <img src="img/hackathon-2024/group-2024.jpg" class="img-fluid"
+                    alt="Group photo of 2024 hackathon participants, organizers, and judges" />
+                <p class="event-details">
+                    <strong>Date:</strong> Friday September 19th to Sunday September
+                    21st, 2025<br />
+                    <strong>Location:</strong> Terrence Donnelly Centre for Cellular
+                    &amp; Biomolecular Research<br />
+                    <strong>Address:</strong> 160 College St, Toronto, Canada
+                </p>
+            </div>
+            <div class="col-12 col-lg-5 pt-2 pt-lg-0 text-start">
+                <p class="hackathon-summary">
+                    The Toronto Bioinformatics Hackathon is a student-led computational
+                    biology hackathon, bringing together early career bioinformaticians,
+                    molecular biologists, statisticians, and computer scientists from
+                    Toronto's Discovery District to complete interdisciplinary projects
+                    that emphasize computational and entrepreneurial thinking.
+                </p>
+                <p class="hackathon-summary">
+                    In partnership with the Terrence Donnelly Centre and the Temerty
+                    Faculty of Medicine's Computational Biology in Molecular Genetics
+                    program, our participants will collaborate to propose innovative
+                    solutions to key challenges in computational biology with
+                    commercialization potential.
+                </p>
 
-          <div class="col-12 text-center">
-            <a
-              href="./docs/TBH_Program_2024.pdf"
-              class="btn tbh-btn mt-4 py-3"
-              role="button"
-              target="_blank"
-              >View our 2024 program</a
-            >
-          </div>
+                <div class="col-12 text-center">
+                    <a href="./docs/TBH_Program_2024.pdf" class="btn tbh-btn mt-4 py-3" role="button"
+                        target="_blank">View our 2024 program</a>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
 
     <div class="container-fluid jumbotron-fluid window">
-      <div class="row justify-content-center py-5">
-        <div class="col-12 py-5" align="center">
-          <h2 align="center">Read about us in the Donnelly Centre News!</h2>
-          <a
-            href="https://thedonnellycentre.utoronto.ca/news/donnelly-centre-students-organize-torontos-first-bioinformatics-hackathon"
-            class="btn tbh-btn-outline mt-5 py-3"
-            role="button"
-            target="_blank"
-            >Visit article</a
-          >
+        <div class="row justify-content-center py-5">
+            <div class="col-12 py-5" align="center">
+                <h2 align="center">Read about us in the Donnelly Centre News!</h2>
+                <a href="https://thedonnellycentre.utoronto.ca/news/donnelly-centre-students-organize-torontos-first-bioinformatics-hackathon"
+                    class="btn tbh-btn-outline mt-5 py-3" role="button" target="_blank">Visit article</a>
+            </div>
         </div>
-      </div>
     </div>
 
     <!-- <div class="container my-5">
@@ -181,159 +155,154 @@
 
   <hr class="border border-dark border-2 my-4 d-block" /> -->
 
+
+    <div class="footer-judges py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 d-flex flex-column align-items-center">
+                    <h1 class="mb-3">A big thank you to our 2024 judges</h1>
+                    <p>They brought their expertise and insight to highlight our participants' best
+                        ideas.</p>
+                </div>
+            </div>
+            <div class="row justify-content-center judges-row">
+                <div class="col-lg-2 col-md-4 col-sm-12">
+                    <img src="./img/headshots/judges/A_Goeva_blue.png" class="img-fluid" alt="">
+                    <h5 class="mt-3">Dr. Aleksandrina<br>Goeva</h5>
+                    <p>Assistant Professor of Computational Biology</p>
+                    <p>University of Toronto</p>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-12">
+                    <img src="./img/headshots/judges/A_Shkurin_blue.png" class="img-fluid" alt="">
+                    <h5 class="mt-3">Dr. Aleksei<br>Shkurin</h5>
+                    <p>AI Lead</p>
+                    <p>Invisible Technologies</p>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-12">
+                    <img src="./img/headshots/judges/O_Whitley_blue.png" class="img-fluid" alt="">
+                    <h5 class="mt-3">Dr. Owen<br>Whitley</h5>
+                    <p>Computational Biologist</p>
+                    <p>Roche Canada</p>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-12">
+                    <img src="./img/headshots/judges/J_Fine_blue.png" class="img-fluid" alt="">
+                    <h5 class="mt-3">Jacob<br>Fine</h5>
+                    <p>PhD Student in Computational Biology</p>
+                    <p>University of Toronto</p>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-12">
+                    <img src="./img/headshots/judges/E_Afanasiev_blue.png" class="img-fluid" alt="">
+                    <h5 class="mt-3">Elia<br>Afanasiev</h5>
+                    <p>Master's Student in Neuroscience</p>
+                    <p>McGill University</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
     <div class="container my-5 d-block">
-      <div class="row">
-        <div class="col-12 mt-4 mb-5">
-          <h1 class="text-center">Powered by</h1>
+        <div class="row">
+            <div class="col-12 mt-4 mb-5">
+                <h1 class="text-center">Powered by</h1>
+            </div>
         </div>
-      </div>
 
-      <!-- First row -->
-      <div class="row justify-content-evenly align-items-center text-center">
-        <div class="col-12 col-sm-6 col-lg-3 my-3">
-          <img
-            src="./img/logos/ccbr.png"
-            class="img-fluid mx-auto d-block w-100 d-none d-sm-block"
-            alt="Donnelly Centre"
-          />
-          <img
-            src="./img/logos/ccbr.png"
-            class="img-fluid mx-auto d-block w-75 d-block d-sm-none"
-            alt="Donnelly Centre (mobile)"
-          />
+        <!-- First row -->
+        <div class="row justify-content-evenly align-items-center text-center">
+            <div class="col-12 col-sm-6 col-lg-3 my-3">
+                <img src="./img/logos/ccbr.png" class="img-fluid mx-auto d-block w-100 d-none d-sm-block"
+                    alt="Donnelly Centre" />
+                <img src="./img/logos/ccbr.png" class="img-fluid mx-auto d-block w-75 d-block d-sm-none"
+                    alt="Donnelly Centre (mobile)" />
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3 my-3">
+                <img src="./img/logos/mogen.png" class="img-fluid mx-auto d-block w-100 d-none d-sm-block"
+                    alt="Molecular Genetics UofT" />
+                <img src="./img/logos/mogen.png" class="img-fluid mx-auto d-block w-75 d-block d-sm-none"
+                    alt="Molecular Genetics UofT (mobile)" />
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3 my-3">
+                <img src="./img/logos/dg.png" class="img-fluid mx-auto d-block w-100 d-none d-sm-block"
+                    alt="Deep Genomics" />
+                <img src="./img/logos/dg.png" class="img-fluid mx-auto d-block w-75 d-block d-sm-none"
+                    alt="Deep Genomics (mobile)" />
+            </div>
         </div>
-        <div class="col-12 col-sm-6 col-lg-3 my-3">
-          <img
-            src="./img/logos/mogen.png"
-            class="img-fluid mx-auto d-block w-100 d-none d-sm-block"
-            alt="Molecular Genetics UofT"
-          />
-          <img
-            src="./img/logos/mogen.png"
-            class="img-fluid mx-auto d-block w-75 d-block d-sm-none"
-            alt="Molecular Genetics UofT (mobile)"
-          />
-        </div>
-        <div class="col-12 col-sm-6 col-lg-3 my-3">
-          <img
-            src="./img/logos/dg.png"
-            class="img-fluid mx-auto d-block w-100 d-none d-sm-block"
-            alt="Deep Genomics"
-          />
-          <img
-            src="./img/logos/dg.png"
-            class="img-fluid mx-auto d-block w-75 d-block d-sm-none"
-            alt="Deep Genomics (mobile)"
-          />
-        </div>
-      </div>
 
-      <!-- Second row -->
-      <div class="row justify-content-evenly align-items-center text-center">
-        <div class="col-12 col-sm-6 col-lg-2 my-3">
-          <img
-            src="./img/logos/csb.png"
-            class="img-fluid mx-auto d-block w-100 d-none d-sm-block"
-            alt="CSB"
-          />
-          <img
-            src="./img/logos/csb.png"
-            class="img-fluid mx-auto d-block w-75 d-block d-sm-none"
-            alt="CSB (mobile)"
-          />
+        <!-- Second row -->
+        <div class="row justify-content-evenly align-items-center text-center">
+            <div class="col-12 col-sm-6 col-lg-2 my-3">
+                <img src="./img/logos/csb.png" class="img-fluid mx-auto d-block w-100 d-none d-sm-block" alt="CSB" />
+                <img src="./img/logos/csb.png" class="img-fluid mx-auto d-block w-75 d-block d-sm-none"
+                    alt="CSB (mobile)" />
+            </div>
+            <div class="col-12 col-sm-6 col-lg-5 my-3">
+                <img src="./img/logos/da-horizontal.png" class="img-fluid mx-auto d-block w-100 d-none d-sm-block"
+                    alt="Digital Research Alliance" />
+                <img src="./img/logos/da-horizontal.png" class="img-fluid mx-auto d-block w-75 d-block d-sm-none"
+                    alt="Digital Research Alliance (mobile)" />
+            </div>
         </div>
-        <div class="col-12 col-sm-6 col-lg-5 my-3">
-          <img
-            src="./img/logos/da-horizontal.png"
-            class="img-fluid mx-auto d-block w-100 d-none d-sm-block"
-            alt="Digital Research Alliance"
-          />
-          <img
-            src="./img/logos/da-horizontal.png"
-            class="img-fluid mx-auto d-block w-75 d-block d-sm-none"
-            alt="Digital Research Alliance (mobile)"
-          />
-        </div>
-      </div>
 
-      <!-- Third row -->
-      <div class="row justify-content-evenly align-items-center text-center">
-        <div class="col-12 col-sm-6 col-lg-4 my-3">
-          <img
-            src="./img/logos/wolfram.png"
-            class="img-fluid mx-auto d-block w-100 d-none d-sm-block"
-            alt="Wolfram"
-          />
-          <img
-            src="./img/logos/wolfram.png"
-            class="img-fluid mx-auto d-block w-75 d-block d-sm-none"
-            alt="Wolfram (mobile)"
-          />
+        <!-- Third row -->
+        <div class="row justify-content-evenly align-items-center text-center">
+            <div class="col-12 col-sm-6 col-lg-4 my-3">
+                <img src="./img/logos/wolfram.png" class="img-fluid mx-auto d-block w-100 d-none d-sm-block"
+                    alt="Wolfram" />
+                <img src="./img/logos/wolfram.png" class="img-fluid mx-auto d-block w-75 d-block d-sm-none"
+                    alt="Wolfram (mobile)" />
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3 my-3">
+                <img src="./img/logos/bioinformatics.jpg" class="img-fluid mx-auto d-block w-100 d-none d-sm-block"
+                    alt="bioinformatics.ca" />
+                <img src="./img/logos/bioinformatics.jpg" class="img-fluid mx-auto d-block w-75 d-block d-sm-none"
+                    alt="bioinformatics.ca (mobile)" />
+            </div>
         </div>
-        <div class="col-12 col-sm-6 col-lg-3 my-3">
-          <img
-            src="./img/logos/bioinformatics.jpg"
-            class="img-fluid mx-auto d-block w-100 d-none d-sm-block"
-            alt="bioinformatics.ca"
-          />
-          <img
-            src="./img/logos/bioinformatics.jpg"
-            class="img-fluid mx-auto d-block w-75 d-block d-sm-none"
-            alt="bioinformatics.ca (mobile)"
-          />
-        </div>
-      </div>
 
-      <!-- Fourth row -->
-      <div class="row justify-content-center text-center">
-        <div class="col-12 col-md-6 col-lg-4 mt-4 mb-5">
-          <img
-            src="./img/logos/gbb.png"
-            class="img-fluid mx-auto d-block w-100 d-none d-sm-block"
-            alt="GBB"
-          />
-          <img
-            src="./img/logos/gbb.png"
-            class="img-fluid mx-auto d-block w-75 d-block d-sm-none"
-            alt="GBB (mobile)"
-          />
+        <!-- Fourth row -->
+        <div class="row justify-content-center text-center">
+            <div class="col-12 col-md-6 col-lg-4 mt-4 mb-5">
+                <img src="./img/logos/gbb.png" class="img-fluid mx-auto d-block w-100 d-none d-sm-block" alt="GBB" />
+                <img src="./img/logos/gbb.png" class="img-fluid mx-auto d-block w-75 d-block d-sm-none"
+                    alt="GBB (mobile)" />
+            </div>
         </div>
-      </div>
 
-      <div class="row">
-        <div class="col-12 mt-4 mb-3">
-          <h4 class="sponsor-thankyou text-center mx-auto">
-            A huge thank you to our sponsors and supporters – we couldn't do
-            this without you!
-          </h4>
+        <div class="row">
+            <div class="col-12 mt-4 mb-3">
+                <h4 class="sponsor-thankyou text-center mx-auto">
+                    A huge thank you to our sponsors and supporters – we couldn't do
+                    this without you!
+                </h4>
+            </div>
         </div>
-      </div>
     </div>
 
     <div id="sponsor-cta"></div>
 
     <!-- Application and Project Idea Section -->
-    <div class="jumbotron-fluid footer-application py-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <h2 class="mb-4">Ready to join or pitch an idea?</h2>
-            <!-- <p class="application-text text-center mx-auto">
+    <div class="jumbotron-fluid footer-project py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="mb-4">Ready to join or pitch an idea?</h2>
+                    <!-- <p class="text-center mx-auto">
               Whether you're looking to participate in the hackathon or have a
               compelling project idea, we want to hear from you! Submit your
               application or propose your project using the links below.
             </p> -->
-            <p class="application-text text-center mx-auto">
-              Whether you're looking to participate in the hackathon or have a
-              compelling project idea, we want to hear from you!
-            </p>
-            <div
-              class="d-flex flex-column flex-md-row justify-content-center mt-5 gap-3 text-center"
-            >
-              <h4 class="text-warning mb-0">
-                Applications and project idea submissions open July 14th, 2025.
-              </h4>
-              <!-- 
+                    <p class="text-center mx-auto">
+                        Whether you're looking to participate in the hackathon or have a
+                        compelling project idea, we want to hear from you!
+                    </p>
+                    <div class="d-flex flex-column flex-md-row justify-content-center mt-5 gap-3 text-center">
+                        <h4 class="text-warning mb-0">
+                            Applications and project idea submissions open July 14th, 2025.
+                        </h4>
+                        <!-- 
             <a
               href="https://docs.google.com/forms/d/1Qq0DjzbLaQk0UXh0sdySDql6wM7JuMJrVV4MnWVEbDI/edit"
               target="_blank"
@@ -350,63 +319,65 @@
             >
               Submit a Project Idea
             </a>
-            --></div>
-          </div>
+            -->
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
 
     <div id="footer"></div>
     <!-- Load navigation menu -->
     <script>
-      var xhttp_nav = new XMLHttpRequest();
-      xhttp_nav.onreadystatechange = function () {
-        if (this.readyState == 4 && this.status == 200) {
-          // Insert the navbar into the DOM
-          document.getElementById("tbh-nav").innerHTML = xhttp_nav.responseText;
+        var xhttp_nav = new XMLHttpRequest();
+        xhttp_nav.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                // Insert the navbar into the DOM
+                document.getElementById("tbh-nav").innerHTML = xhttp_nav.responseText;
 
-          // Now that the navbar is loaded, add the scroll event listener
-          const navColour = document.querySelector("#tbh-nav");
+                // Now that the navbar is loaded, add the scroll event listener
+                const navColour = document.querySelector("#tbh-nav");
 
-          window.addEventListener("scroll", () => {
-            if (window.scrollY >= 56) {
-              // Add the solid background (bg-* class) and navbar-scrolled class
-              navColour.classList.add("navbar-scrolled", "bg-blue");
-            } else {
-              // Remove the background and navbar-scrolled class to make it transparent
-              navColour.classList.remove("navbar-scrolled", "bg-blue");
+                window.addEventListener("scroll", () => {
+                    if (window.scrollY >= 56) {
+                        // Add the solid background (bg-* class) and navbar-scrolled class
+                        navColour.classList.add("navbar-scrolled", "bg-blue");
+                    } else {
+                        // Remove the background and navbar-scrolled class to make it transparent
+                        navColour.classList.remove("navbar-scrolled", "bg-blue");
+                    }
+                });
             }
-          });
-        }
-      };
-      xhttp_nav.open("GET", "./nav.html", true);
-      xhttp_nav.send();
+        };
+        xhttp_nav.open("GET", "./nav.html", true);
+        xhttp_nav.send();
     </script>
 
     <!-- Load sponsorship CTA -->
     <script>
-      var xhttp_sponsor = new XMLHttpRequest();
-      xhttp_sponsor.onreadystatechange = function () {
-        if (this.readyState == 4 && this.status == 200) {
-          document.getElementById("sponsor-cta").innerHTML =
-            xhttp_sponsor.responseText;
-        }
-      };
-      xhttp_sponsor.open("GET", "./sponsor-cta.html", true);
-      xhttp_sponsor.send();
+        var xhttp_sponsor = new XMLHttpRequest();
+        xhttp_sponsor.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("sponsor-cta").innerHTML =
+                    xhttp_sponsor.responseText;
+            }
+        };
+        xhttp_sponsor.open("GET", "./sponsor-cta.html", true);
+        xhttp_sponsor.send();
     </script>
 
     <!-- Load footer -->
     <script>
-      var xhttp_footer = new XMLHttpRequest();
-      xhttp_footer.onreadystatechange = function () {
-        if (this.readyState == 4 && this.status == 200) {
-          document.getElementById("footer").innerHTML =
-            xhttp_footer.responseText;
-        }
-      };
-      xhttp_footer.open("GET", "./footer.html", true);
-      xhttp_footer.send();
+        var xhttp_footer = new XMLHttpRequest();
+        xhttp_footer.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("footer").innerHTML =
+                    xhttp_footer.responseText;
+            }
+        };
+        xhttp_footer.open("GET", "./footer.html", true);
+        xhttp_footer.send();
     </script>
-  </body>
+</body>
+
 </html>
