@@ -562,7 +562,7 @@
       </div>
     </div>
 
-    <div class="jumbotron-conduct mt-5">
+    <div class="footer-conduct mt-5">
       <div class="container">
         <div class="row">
           <div class="col-12">
@@ -596,15 +596,19 @@
 
     <!-- Load sponsorship CTA -->
     <script>
-      var xhttp_sponsor = new XMLHttpRequest();
-      xhttp_sponsor.onreadystatechange = function () {
-        if (this.readyState == 4 && this.status == 200) {
-          document.getElementById("sponsor-cta").innerHTML =
-            xhttp_sponsor.responseText;
-        }
-      };
-      xhttp_sponsor.open("GET", "./sponsor-cta.html", true);
-      xhttp_sponsor.send();
+      window.addEventListener("DOMContentLoaded", () => {
+        const xhttp_sponsor = new XMLHttpRequest();
+        xhttp_sponsor.onreadystatechange = function () {
+          if (this.readyState === 4 && this.status === 200) {
+            const sponsorEl = document.getElementById("sponsor-cta");
+            if (sponsorEl) {
+              sponsorEl.innerHTML = xhttp_sponsor.responseText;
+            }
+          }
+        };
+        xhttp_sponsor.open("GET", "./sponsor-cta.html", true);
+        xhttp_sponsor.send();
+      });
     </script>
 
     <!-- Load footer -->
