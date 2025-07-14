@@ -376,6 +376,9 @@ hr {
     /* same as bootstrap's h1 */
     font-size: calc(1.375rem + 1.5vw);
   }
+  .footer-judges img {
+    max-width: 80vw;
+  }
 }
 @media (min-width: 769px) and (max-width: 1200px) {
   .sponsor-thankyou {
