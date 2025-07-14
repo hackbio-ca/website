@@ -79,7 +79,7 @@ hr {
   text-decoration: none !important;
 }
 
-.navbar .nav-application {
+.navbar .nav-registration {
   color: #66e27b;
 }
 
@@ -326,7 +326,7 @@ hr {
   transition: 150ms linear !important;
 }
 
-.tbh-btn-apply {
+.tbh-btn-register {
   background-color: none !important;
   color: #fff !important;
   padding: 10px 40px !important;
@@ -338,7 +338,7 @@ hr {
   font-size: 1.4rem !important;
 }
 
-.tbh-btn-apply:hover {
+.tbh-btn-register:hover {
   background-color: #146b5a !important;
   color: #fff !important;
   border-color: #146b5a !important;
@@ -358,7 +358,7 @@ hr {
   .navbar .nav-item {
     padding-bottom: 0.5rem !important;
   }
-  .application-text {
+  .registration-text {
     max-width: 100vw;
   }
   .sponsor-thankyou {
