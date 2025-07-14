@@ -142,6 +142,7 @@ hr {
   min-height: 80vh;
   background: url("../img/stained-cell-image-banner.jpg") no-repeat center center;
   background-size: cover;
+  border-top: 8px solid #fff;
   color: #fff;
   text-align: center;
   display: flex;
@@ -184,6 +185,7 @@ hr {
   min-height: 70vh;
   background: url("../img/national-cancer-institute-ERdyFahv-GU-unsplash.png") no-repeat center center;
   background-size: cover;
+  border-top: 8px solid #fff;
   color: #fff;
   text-align: center;
   display: flex;
