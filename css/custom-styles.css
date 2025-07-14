@@ -53,7 +53,7 @@ hr {
 .navbar .nav-link {
   color: #fff;
   font-size: 1.15rem;
-  margin-left: 2rem;
+  margin-left: 1.5rem;
   text-decoration: none !important;
   display: inline-block;
   border-bottom: 1px solid transparent;
@@ -77,6 +77,10 @@ hr {
   margin-right: 1rem;
   margin-left: 1rem;
   text-decoration: none !important;
+}
+
+.navbar .nav-application {
+  color: #66e27b;
 }
 
 .navbar .navbar-toggler-icon {
