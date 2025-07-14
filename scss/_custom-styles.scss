@@ -116,8 +116,8 @@ hr {
   justify-content: center;
 }
 
-.jumbotron-fluid {
-  min-height: 55vh;
+.jumbotron-donnelley {
+  min-height: 60vh;
   margin: 0;
 }
 
@@ -314,6 +314,12 @@ hr {
   transition: 150ms linear !important;
 }
 
+.tbh-btn:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
 .tbh-btn-outline {
   background-color: transparent !important;
   color: #fff !important;
@@ -334,8 +340,9 @@ hr {
 }
 
 .tbh-btn-apply {
-  background-color: #057bc1 !important;
+  background-color: none !important;
   color: #fff !important;
+  padding: 10px 40px !important;
   border-radius: 0px !important;
   border-width: 3px !important;
   border-color: #fff !important;
