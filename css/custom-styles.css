@@ -379,6 +379,13 @@ hr {
   .footer-judges img {
     max-width: 80vw;
   }
+  .jumbotron-landing {
+    height: unset;
+    padding: 2rem 1rem;
+  }
+  .img-landing {
+    padding-top: 5rem;
+  }
 }
 @media (min-width: 769px) and (max-width: 1200px) {
   .sponsor-thankyou {
