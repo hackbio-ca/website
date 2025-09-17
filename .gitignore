@@ -17,3 +17,6 @@ __pycache__/
 
 # Sass cache
 .sass-cache/
+
+# Other files
+*.pptx
