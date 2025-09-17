@@ -1,11 +1,5 @@
 body {
-  font-family:
-    SF Pro Display,
-    SF Pro Icons,
-    Helvetica Neue,
-    Helvetica,
-    Arial,
-    sans-serif;
+  font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
 p {
@@ -106,8 +100,7 @@ hr {
 
 .jumbotron-landing {
   height: 100vh;
-  background: url("../img/codioful-formerly-gradienta-bKESVqfxass-unsplash.jpg")
-    no-repeat center center;
+  background: url("../img/codioful-formerly-gradienta-bKESVqfxass-unsplash.jpg") no-repeat center center;
   background-size: cover;
   color: #fff;
   text-align: center;
@@ -147,8 +140,7 @@ hr {
 
 .footer-judges {
   min-height: 80vh;
-  background: url("../img/stained-cell-image-banner.jpg") no-repeat center
-    center;
+  background: url("../img/stained-cell-image-banner.jpg") no-repeat center center;
   background-size: cover;
   border-top: 8px solid #fff;
   color: #fff;
@@ -175,8 +167,7 @@ hr {
 
 .footer-sponsor {
   min-height: 70vh;
-  background: url("../img/fusion-medical-animation-EAgGqOiDDMg-unsplash.png")
-    no-repeat center center;
+  background: url("../img/fusion-medical-animation-EAgGqOiDDMg-unsplash.png") no-repeat center center;
   background-size: cover;
   color: #fff;
   text-align: center;
@@ -192,8 +183,7 @@ hr {
 
 .footer-project {
   min-height: 70vh;
-  background: url("../img/national-cancer-institute-ERdyFahv-GU-unsplash.png")
-    no-repeat center center;
+  background: url("../img/national-cancer-institute-ERdyFahv-GU-unsplash.png") no-repeat center center;
   background-size: cover;
   border-top: 8px solid #fff;
   color: #fff;
@@ -213,9 +203,7 @@ hr {
 .jumbotron-team {
   height: 55vh;
   min-height: 300px;
-  background:
-    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../img/digitale-2GEr4fLZt8A-unsplash.png") no-repeat center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/digitale-2GEr4fLZt8A-unsplash.png") no-repeat center center;
   background-size: cover;
   color: #fff;
   text-align: center;
@@ -227,8 +215,7 @@ hr {
 
 .jumbotron-sponsor {
   height: 55vh;
-  background: url("../img/fusion-medical-animation-EAgGqOiDDMg-unsplash.png")
-    no-repeat center center;
+  background: url("../img/fusion-medical-animation-EAgGqOiDDMg-unsplash.png") no-repeat center center;
   background-size: cover;
   color: #fff;
   text-align: center;
@@ -240,8 +227,7 @@ hr {
 
 .jumbotron-conduct {
   height: 55vh;
-  background: url("../img/national-cancer-institute-ERdyFahv-GU-unsplash.png")
-    no-repeat center center;
+  background: url("../img/national-cancer-institute-ERdyFahv-GU-unsplash.png") no-repeat center center;
   background-size: cover;
   color: #fff;
   text-align: center;
@@ -253,8 +239,7 @@ hr {
 
 .footer-conduct {
   min-height: 70vh;
-  background: url("../img/national-cancer-institute-ERdyFahv-GU-unsplash.png")
-    no-repeat center center;
+  background: url("../img/national-cancer-institute-ERdyFahv-GU-unsplash.png") no-repeat center center;
   background-size: cover;
   color: #fff;
   text-align: center;
@@ -266,8 +251,7 @@ hr {
 
 .jumbotron-contact {
   height: 55vh;
-  background: url("../img/philipp-katzenberger-jVx8JaO2Ddc-unsplash.png")
-    no-repeat center center;
+  background: url("../img/philipp-katzenberger-jVx8JaO2Ddc-unsplash.png") no-repeat center center;
   background-size: cover;
   color: #fff;
   text-align: center;
@@ -370,6 +354,15 @@ hr {
   font-size: 1.2rem;
 }
 
+.judges-row .judge-photo {
+  width: 220px;
+  height: 220px;
+  aspect-ratio: 1/1;
+  object-fit: contain; /* show full blue circle; no cropping */
+  object-position: center;
+  display: block;
+}
+
 @media (max-width: 768px) {
   .navbar .nav-item {
     padding-bottom: 0.5rem !important;
@@ -385,7 +378,7 @@ hr {
     max-width: 100vw;
   }
   .footer-judges p:first-of-type {
-    font-size: 1.7rem;
+    font-size: 1.4rem;
     max-width: 100vw;
   }
   .footer-judges h5 {
@@ -406,6 +399,29 @@ hr {
 @media (min-width: 769px) and (max-width: 1200px) {
   .sponsor-thankyou {
     max-width: 100vw;
+  }
+}
+@media (max-width: 767.98px) {
+  .judges-row .judge-photo {
+    width: 170px;
+    height: 170px;
+  }
+}
+@media (min-width: 1400px) {
+  .judges-row .judge-photo {
+    width: 240px;
+    height: 240px;
+  }
+}
+@media (max-width: 767.98px) {
+  .judges-row h5 {
+    font-size: 1.2rem;
+    line-height: 1.3;
+  }
+  .judges-row p {
+    font-size: 1.1rem;
+    line-height: 1.3;
+    margin-bottom: 0.3rem;
   }
 }
 
