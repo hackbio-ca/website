@@ -1,5 +1,11 @@
 body {
-  font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family:
+    SF Pro Display,
+    SF Pro Icons,
+    Helvetica Neue,
+    Helvetica,
+    Arial,
+    sans-serif;
 }
 
 p {
@@ -100,7 +106,8 @@ hr {
 
 .jumbotron-landing {
   height: 100vh;
-  background: url("../img/codioful-formerly-gradienta-bKESVqfxass-unsplash.jpg") no-repeat center center;
+  background: url("../img/codioful-formerly-gradienta-bKESVqfxass-unsplash.jpg")
+    no-repeat center center;
   background-size: cover;
   color: #fff;
   text-align: center;
@@ -140,7 +147,8 @@ hr {
 
 .footer-judges {
   min-height: 80vh;
-  background: url("../img/stained-cell-image-banner.jpg") no-repeat center center;
+  background: url("../img/stained-cell-image-banner.jpg") no-repeat center
+    center;
   background-size: cover;
   border-top: 8px solid #fff;
   color: #fff;
@@ -167,7 +175,8 @@ hr {
 
 .footer-sponsor {
   min-height: 70vh;
-  background: url("../img/fusion-medical-animation-EAgGqOiDDMg-unsplash.png") no-repeat center center;
+  background: url("../img/fusion-medical-animation-EAgGqOiDDMg-unsplash.png")
+    no-repeat center center;
   background-size: cover;
   color: #fff;
   text-align: center;
@@ -183,7 +192,8 @@ hr {
 
 .footer-project {
   min-height: 70vh;
-  background: url("../img/national-cancer-institute-ERdyFahv-GU-unsplash.png") no-repeat center center;
+  background: url("../img/national-cancer-institute-ERdyFahv-GU-unsplash.png")
+    no-repeat center center;
   background-size: cover;
   border-top: 8px solid #fff;
   color: #fff;
@@ -203,7 +213,9 @@ hr {
 .jumbotron-team {
   height: 55vh;
   min-height: 300px;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/digitale-2GEr4fLZt8A-unsplash.png") no-repeat center center;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/digitale-2GEr4fLZt8A-unsplash.png") no-repeat center center;
   background-size: cover;
   color: #fff;
   text-align: center;
@@ -215,7 +227,8 @@ hr {
 
 .jumbotron-sponsor {
   height: 55vh;
-  background: url("../img/fusion-medical-animation-EAgGqOiDDMg-unsplash.png") no-repeat center center;
+  background: url("../img/fusion-medical-animation-EAgGqOiDDMg-unsplash.png")
+    no-repeat center center;
   background-size: cover;
   color: #fff;
   text-align: center;
@@ -227,7 +240,8 @@ hr {
 
 .jumbotron-conduct {
   height: 55vh;
-  background: url("../img/national-cancer-institute-ERdyFahv-GU-unsplash.png") no-repeat center center;
+  background: url("../img/national-cancer-institute-ERdyFahv-GU-unsplash.png")
+    no-repeat center center;
   background-size: cover;
   color: #fff;
   text-align: center;
@@ -239,7 +253,8 @@ hr {
 
 .footer-conduct {
   min-height: 70vh;
-  background: url("../img/national-cancer-institute-ERdyFahv-GU-unsplash.png") no-repeat center center;
+  background: url("../img/national-cancer-institute-ERdyFahv-GU-unsplash.png")
+    no-repeat center center;
   background-size: cover;
   color: #fff;
   text-align: center;
@@ -251,7 +266,8 @@ hr {
 
 .jumbotron-contact {
   height: 55vh;
-  background: url("../img/philipp-katzenberger-jVx8JaO2Ddc-unsplash.png") no-repeat center center;
+  background: url("../img/philipp-katzenberger-jVx8JaO2Ddc-unsplash.png")
+    no-repeat center center;
   background-size: cover;
   color: #fff;
   text-align: center;
