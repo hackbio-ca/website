@@ -28,16 +28,12 @@
     ></script>
     <!-- Countdown script -->
     <script>
-      // Start of event (kept from current code)
-      var startDate = new Date("September 19, 2025 16:59:59");
+      // Start and end of event (explicit dates)
+      const startDate = new Date("September 19, 2025 16:59:59");
+      const endDate   = new Date("September 21, 2025 18:59:59");
 
-      // Derive end of event from the start: +2 days, at 23:59:59
-      var endDate = new Date(startDate.getTime());
-      endDate.setDate(endDate.getDate() + 2);
-      endDate.setHours(23, 59, 59, 999);
-
-      var x = setInterval(function () {
-        var now = new Date();
+      const x = setInterval(function () {
+        const now = new Date();
 
         if (now < startDate) {
           // Countdown to start
